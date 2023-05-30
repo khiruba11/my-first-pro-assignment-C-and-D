@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>upload page</title>
+</head>
+<style>
+    form{
+      border:3px solid black;
+    }
+    input:not([type="radio"]),input:not([type="checkbox"]){
+      height:15px;
+    }
+    input[type="button"]{
+      background-color:greenyellow;
+      border-radius: 10px;
+      padding:10px 15px 20px 10px ;
+      text-align: center;
+      display:block;
+    }
+    .input[type="button"]{
+        padding: 100px;
+    }
+  </style>
+  <body>
+    <form method="post">
+      <!-- all element we need for form should be inside of form element -->
+    <h2>Register to upload notes</h2>
+    <label for="name">Enter your name*:</label>
+    <input type="text" placeholder="enter your name" id="name"name="name" required>
+  <br>
+  <p>
+  <small id="nameErr" ></small>
+  </p>
+  <p>
+  <label for="useremail">Enter your email:</label>
+  <input type="email" placeholder="enter your email" id="useremail" name="mail">
+  </p>
+  <p>
+  <label for="Note Title">Enter your note title:</label>
+  <input type="Note Title" placeholder="enter your note title" id="Note Title" name="Note Title">
+  </p>
+  <p>
+  <label for="description">Description:</label>
+  <input type="description" placeholder="Input your description" id="discription" name="discription">
+  </p>
+  <p>
+  <label for="choose file to upload"> Choose file to upload:</label>
+  <input type=" choose file to upload" placeholder="upload your file" id=" choose file to upload" name="choose file to upload">
+  <input type="button" id="submitBtn" value="Upload">
+  </p>
+  </form> 
+    
+</body>
+</html>
